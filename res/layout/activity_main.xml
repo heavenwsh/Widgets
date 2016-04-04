@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/hello_world" />
+    
+    <ImageView 
+        android:id="@+id/iv1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv1"
+        android:layout_margin="10dp"
+        android:src="@drawable/multibg_style"/>
+    
+    <com.example.widgets.CustomSkinProgressbar1
+        android:id="@+id/progress1"
+        android:layout_height="38px"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/iv1"
+        android:layout_margin="10dp"
+        />
+    <com.example.widgets.FooterTracker
+        android:id="@+id/footer"
+        android:layout_height="100px"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/progress1"
+        android:layout_margin="10dp"/>
+    
+    <ImageView 
+        android:id="@+id/iv2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/footer"
+        android:layout_margin="10dp"/>
+    
+    <ImageView 
+        android:id="@+id/iv3"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_below="@+id/iv2"
+        android:src="@drawable/inset_drawable"
+        android:background="#ff0000"
+        android:layout_margin="10dp"/>
+    
+    <ImageView 
+        android:id="@+id/iv4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/iv3"
+        android:layout_margin="10dp"/>
+    
+    <View 
+        android:id="@+id/view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv4"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
