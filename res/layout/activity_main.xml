@@ -62,5 +62,13 @@
         android:layout_height="50dp"
         android:layout_below="@+id/iv4"
         android:layout_margin="10dp"/>
+    
+    <com.example.widgets.CheckableImageView 
+        android:id="@+id/civ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_margin="10dp"
+        android:background="@drawable/key_shape_selector"/>
 
 </RelativeLayout>

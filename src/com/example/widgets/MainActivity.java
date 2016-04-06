@@ -32,6 +32,22 @@ public class MainActivity extends Activity {
 		demoIv4();
 		
 		demoView();
+		
+		demoCheckableImageview();
+	}
+	
+	public static int flag = 0;
+
+	private void demoCheckableImageview() {
+		// TODO Auto-generated method stub
+		final CheckableImageView view = (CheckableImageView) findViewById(R.id.civ);
+		view.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				view.setChecked(!view.isChecked());
+			}
+		});
 	}
 
 	private void demoView() {
